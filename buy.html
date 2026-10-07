@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+
+<html lang="fa" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>سبد خرید</title>
+
+    <link rel="stylesheet" href="./src/css/output.css">
+
+    <link rel="stylesheet" href="./src/swiper/swiper-bundle.min.css"/>
+
+</head>
+
+<body>
+
+    <div class="w-full overflow-hidden">
+
+        <!-- HEADER -->
+
+        <header class="w-full bg-white">
+
+            <div
+                class="max-w-325 mx-auto min-h-16 px-4 sm:px-6 lg:px-8 flex flex-wrap items-center justify-between gap-y-4 py-4 lg:py-0"
+            >
+
+                <!-- Logo -->
+
+                <div class="flex items-center shrink-0">
+
+                    <img
+                        src="./src/image/Logo.png"
+                        alt="Lilian"
+                        class="w-auto max-w-28 sm:max-w-32.5"
+                    />
+
+                </div>
+
+                <nav
+                    class="w-full order-3 lg:order-0 lg:w-auto flex justify-center lg:justify-start gap-4 sm:gap-7 lg:gap-6"
+                >
+
+                    <a class="font-sans text-xs sm:text-sm lg:text-base whitespace-nowrap" href="#">
+                        مردانه
+                    </a>
+
+                    <a
+                        class="font-sans text-xs sm:text-sm lg:text-base whitespace-nowrap"
+                        href="./index2.html"
+                    >
+                        زنانه
+                    </a>
+
+                    <a class="font-sans text-xs sm:text-sm lg:text-base whitespace-nowrap" href="#">
+                        درباره ما
+                    </a>
+
+                    <a class="font-sans text-xs sm:text-sm lg:text-base whitespace-nowrap" href="#">
+                        تماس با ما
+                    </a>
+
+                </nav>
+
+                <div class="flex items-center gap-3 sm:gap-4 lg:gap-5">
+
+                    <a href="#">
+
+                        <img
+                            src="./src/image/Search.png"
+                            alt="Search"
+                            class="w-4 h-4 sm:w-5 sm:h-5"
+                        />
+
+                    </a>
+
+                    <a href="#" onclick="openLogin(event)">
+
+                        <img
+                            src="./src/image/User Alt.png"
+                            alt="User"
+                            class="w-4 h-4 sm:w-5 sm:h-5"
+                        />
+
+                    </a>
+
+                    <a href="./buy.html">
+
+                        <img
+                            src="./src/image/Shopping Cart.png"
+                            alt="Shopping cart"
+                            class="w-4 h-4 sm:w-5 sm:h-5"
+                        />
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- HEADER -->
+
+        <!-- JADVAL -->
+
+        <div class="w-full h-auto max-w-325 mx-auto px-4 sm:px-6 lg:px-8 mt-8 sm:mt-10">
+
+            <!-- مراحل -->
+
+            <div class="flex items-center justify-center gap-8 sm:gap-12 md:gap-16 mb-8 sm:mb-12">
+
+                <!--  1 -->
+
+                <div
+                    class="w-6 h-6 shrink-0 rounded-full bg-[#3D3D3D] text-white flex items-center justify-center text-[10px]"
+                >
+                    1
+                </div>
+
+                <!-- 2 -->
+
+                <div
+                    class="w-6 h-6 shrink-0 rounded-full bg-[#e5e5e5] border border-[#ccc] text-[#888] flex items-center justify-center text-[10px]"
+                >
+                    2
+                </div>
+
+                <!-- 3 -->
+
+                <div
+                    class="w-6 h-6 shrink-0 rounded-full bg-[#e5e5e5] border border-[#ccc] text-[#888] flex items-center justify-center text-[10px]"
+                >
+                    3
+                </div>
+
+            </div>
+
+            <div
+                class="flex flex-col lg:flex-row-reverse gap-4 items-start"
+            >
+
+                <div
+                    class="w-full lg:w-60 border border-[#ddd] p-3 text-[11px]"
+                >
+
+
+                    <div class="flex justify-between items-center font-sans py-2 gap-2">
+
+                        <span>
+                            قیمت کالا (۲)
+                        </span>
+
+                        <strong class="whitespace-nowrap">
+                            5.000.000 تومان
+                        </strong>
+
+                    </div>
+
+
+                    <div class="flex justify-between items-center font-sans py-2 gap-2">
+
+                        <span>
+                            جمع سبد خرید
+                        </span>
+
+                        <strong class="whitespace-nowrap">
+                            5.000.000 تومان
+                        </strong>
+
+                    </div>
+
+
+
+                    <div
+                        class="flex justify-between font-sans items-center py-2 text-red-600 font-bold gap-2"
+                    >
+
+                        <span>
+                            سود شما از خرید
+                        </span>
+
+                        <strong class="whitespace-nowrap">
+                            950.000 تومان
+                        </strong>
+
+                    </div>
+
+
+
+                    <div
+                        class="flex justify-between font-sans items-center border-t border-[#eee] mt-1 pt-3 gap-2"
+                    >
+
+                        <span>
+                            مبلغ قابل پرداخت
+                        </span>
+
+                        <strong class="whitespace-nowrap">
+                            4,100,000 تومان
+                        </strong>
+
+                    </div>
+
+
+
+                    <p class="text-[#777] font-sans text-[10px] leading-6 mt-2">
+
+                        ارسال رایگان برای خریدهای بالای
+                        ۵ میلیون تومان
+
+                    </p>
+
+
+
+                    <button
+                        class="w-full h-9 mt-2 bg-red-600 hover:bg-red-700 text-white text-xs transition"
+                    >
+
+                        ثبت سفارش
+
+                    </button>
+
+                </div>
+
+                <div class="w-full lg:flex-1 overflow-x-auto">
+
+
+
+                    <div
+                        class="min-w-[700px] h-10 bg-[#777] text-white grid grid-cols-4 items-center px-4 text-xs sm:text-sm font-bold"
+                    >
+
+                        <div>محصول</div>
+
+                        <div class="text-center">تعداد</div>
+
+                        <div class="text-center">قیمت</div>
+
+                        <div class="text-center">قیمت کل</div>
+
+                    </div>
+
+
+
+                    <div
+                        class="min-w-[700px] h-[109px] border-b border-[#ddd] grid grid-cols-4 items-center px-4 text-xs"
+                    >
+
+
+
+                        <div class="flex items-center gap-3">
+
+                            <img
+                                src="./src/image/image buy/Frame 94.png"
+                                alt="کت بلیزر پشمی"
+                                class="w-12 h-14 object-cover shrink-0"
+                            />
+
+                            <span class="text-[#555] font-sans whitespace-nowrap">
+
+                                کت بلیزر پشمی
+
+                            </span>
+
+                        </div>
+
+
+
+                        <div class="flex justify-center">
+
+                            <div
+                                class="flex flex-row border border-[#ccc] h-5"
+                            >
+
+                                <button
+                                    onclick="changeQty(this, 1)"
+                                    class="w-5 bg-white text-[#777] border-l border-[#ddd]"
+                                >
+
+                                    +
+
+                                </button>
+
+                                <input
+                                    type="text"
+                                    value="1"
+                                    readonly
+                                    class="w-7 text-center text-[10px] outline-none"
+                                />
+
+                                <button
+                                    onclick="changeQty(this, -1)"
+                                    class="w-5 bg-white text-[#777] border-r border-[#ddd]"
+                                >
+
+                                    −
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="text-center">
+
+                            <span
+                                class="block text-[10px] text-[#aaa] line-through whitespace-nowrap"
+                            >
+
+                                4.200.000 تومان
+
+                            </span>
+
+                            <span class="text-red-600 font-bold whitespace-nowrap">
+
+                                3.800.000 تومان
+
+                            </span>
+
+                        </div>
+
+
+
+                        <div class="text-center text-[#555] whitespace-nowrap">
+
+                            3.800.000 تومان
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div
+                        class="min-w-[700px] h-[109px] border-b border-[#ddd] grid grid-cols-4 items-center px-4 text-xs"
+                    >
+
+
+
+                        <div class="flex items-center gap-3">
+
+                            <img
+                                src="./src/image/image buy/Frame 94 (1).png"
+                                alt="پلیور یقه اسکی"
+                                class="w-12 h-14 object-cover shrink-0"
+                            />
+
+                            <span class="text-[#555] font-sans whitespace-nowrap">
+
+                                پلیور یقه اسکی
+
+                            </span>
+
+                        </div>
+
+
+
+                        <div class="flex justify-center">
+
+                            <div
+                                class="flex flex-row border border-[#ccc] h-5"
+                            >
+
+                                <button
+                                    class="w-5 bg-white text-[#777] border-l border-[#ddd]"
+                                >
+
+                                    +
+
+                                </button>
+
+                                <input
+                                    type="text"
+                                    value="1"
+                                    readonly
+                                    class="w-7 text-center text-[10px] outline-none"
+                                />
+
+                                <button
+                                    class="w-5 bg-white text-[#777] border-r border-[#ddd]"
+                                >
+
+                                    −
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="text-center">
+
+                            <span
+                                class="block font-sans text-[10px] text-[#aaa] line-through whitespace-nowrap"
+                            >
+
+                                1.750.000 تومان
+
+                            </span>
+
+                            <span class="text-red-600 font-sans font-bold whitespace-nowrap">
+
+                                1.200.000 تومان
+
+                            </span>
+
+                        </div>
+
+
+
+                        <div class="text-center text-[#555] whitespace-nowrap">
+
+                            1.200.000 تومان
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- JADVAL -->
+
+        <!--PRODUCTS-->
+
+        <div class="w-full  my-15 px-4 sm:px-6 lg:px-10 xl:px-20">
+            <div class="max-w-325 mx-auto">
+                <h1
+                    class="font-sans text-[20px] sm:text-[17px] mb-8 lg:mb-10 font-bold"
+                >
+                بر اساس سلیقه شما
+                </h1>
+
+            <!-- Products -->
+            <div
+                class="grid grid-cols-2 md:grid-cols-4 gap-x-3 sm:gap-x-5 gap-y-8 lg:gap-x-6"
+            >
+                <div class="group relative flex flex-col gap-y-3 sm:gap-y-4">
+                <img
+                    class="w-full h-127 object-cover"
+                    src="./src/image/picture.png"
+                    alt="کت بلند پاییزی"
+                    id="image-1"
+                />
+                <a
+                    class="font-sans absolute bottom-28 left-1/2 -translate-x-1/2 w-[90%] h-14 bg-white flex justify-center items-center font-bold opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300"
+                    href="#"
+                >
+                    مشاهده محصول
+                </a>
+
+                <h2
+                    class="font-sans text-[14px] sm:text-[17px] lg:text-[19px] font-bold"
+                >
+                    کت بلند پاییزی
+                </h2>
+
+                <div
+                    class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2"
+                >
+                    <h3
+                    class="font-yekan text-rose-700 text-[13px] sm:text-[15px] lg:text-[17px] font-bold"
+                    >
+                    4.500.000 تومان
+                    </h3>
+
+                    <p
+                    class="font-yekan text-gray-600 line-through text-[11px] sm:text-[13px] lg:text-[14px]"
+                    >
+                    4,850,000 تومان
+                    </p>
+                </div>
+                </div>
+
+                <div class="group relative flex flex-col gap-y-3 sm:gap-y-4">
+                <img
+                    class="w-full h-127 object-cover"
+                    src="./src/image/picture (1).png"
+                    alt="پافر بلند زمستانی"
+                    id="image-2"
+                />
+                <a
+                    class="font-sans absolute bottom-28 left-1/2 -translate-x-1/2 w-[90%] h-14 bg-white flex justify-center items-center font-bold opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300"
+                    href="#"
+                >
+                    مشاهده محصول
+                </a>              
+
+                <h2
+                    class="font-sans text-[14px] sm:text-[17px] lg:text-[19px] font-bold"
+                >
+                    پافر بلند زمستانی
+                </h2>
+
+                <div
+                    class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2"
+                >
+                    <h3
+                    class="font-yekan text-rose-700 text-[13px] sm:text-[15px] lg:text-[17px] font-bold"
+                    >
+                    6.700.000 تومان
+                    </h3>
+
+                    <p
+                    class="font-yekan text-gray-600 line-through text-[11px] sm:text-[13px] lg:text-[14px]"
+                    >
+                    8.100.000 تومان
+                    </p>
+                </div>
+                </div>
+
+                <div class="group relative flex flex-col gap-y-3 sm:gap-y-4">
+                <img
+                    class="w-full h-127 object-cover"
+                    src="./src/image/picture (2).png"
+                    alt="پافر زمستانی"
+                    id="image-3"
+                />
+                <a
+                    class="font-sans absolute bottom-28 left-1/2 -translate-x-1/2 w-[90%] h-14 bg-white flex justify-center items-center font-bold opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300"
+                    href="#"
+                >
+                    مشاهده محصول
+                </a>              
+
+                <h2
+                    class="font-sans text-[14px] sm:text-[17px] lg:text-[19px] font-bold"
+                >
+                    پافر زمستانی
+                </h2>
+
+                <div
+                    class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2"
+                >
+                    <h3
+                    class="font-yekan text-rose-700 text-[13px] sm:text-[15px] lg:text-[17px] font-bold"
+                    >
+                    5.450.000 تومان
+                    </h3>
+
+                    <p
+                    class="font-yekan text-gray-600 line-through text-[11px] sm:text-[13px] lg:text-[14px]"
+                    >
+                    5.900.000 تومان
+                    </p>
+                </div>
+                </div>
+
+                <div class="group relative flex flex-col gap-y-3 sm:gap-y-4">
+                <img
+                    class="w-full h-127 object-cover"
+                    src="./src/image/picture (3).png"
+                    alt="کت بلند پشمی"
+                    id="image-4"
+                />
+                <a
+                    class="font-sans absolute bottom-28 left-1/2 -translate-x-1/2 w-[90%] h-14 bg-white flex justify-center items-center font-bold opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300"
+                    href="./indexproduct.html"
+                >
+                    مشاهده محصول
+                </a>              
+
+                <h2
+                    class="font-sans text-[14px] sm:text-[17px] lg:text-[19px] font-bold"
+                >
+                    کت بلند پشمی
+                </h2>
+
+                <div
+                    class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2"
+                >
+                    <h3
+                    class="font-yekan text-rose-700 text-[13px] sm:text-[15px] lg:text-[17px] font-bold"
+                    >
+                    3.800.000 تومان
+                    </h3>
+
+                    <p
+                    class="font-yekan text-gray-600 line-through text-[11px] sm:text-[13px] lg:text-[14px]"
+                    >
+                    4.200.000 تومان
+                    </p>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!--PRODUCTS-->
+
+        <!--FOOTER-->
+
+        <footer
+            class="w-full bg-[#3D3D3D] text-white px-5 sm:px-8 lg:px-12 xl:px-20 py-10 sm:py-12"
+        >
+
+            <div
+                class="max-w-325 mx-auto flex flex-col sm:flex-row sm:flex-wrap lg:flex-nowrap justify-between items-start gap-8 sm:gap-10 lg:gap-8"
+            >
+
+                <div class="w-full sm:w-[45%] lg:w-90">
+
+                    <h2 class="font-bold font-sans text-[16px] sm:text-[18px] mb-5">
+
+                        اولین کسی باش که از تخفیف‌ها باخبر میشه
+
+                    </h2>
+
+                    <div class="flex flex-col">
+
+                        <input
+                            type="email"
+                            placeholder="ایمیل"
+                            class="w-full lg:w-90 h-11 bg-[#777] border border-white px-4 text-right placeholder:text-white placeholder:opacity-90 outline-none mb-4"
+                        />
+
+                        <input
+                            type="text"
+                            placeholder="نام شما"
+                            class="w-full lg:w-90 h-11 bg-transparent border border-white px-4 text-right placeholder:text-white placeholder:opacity-90 outline-none mb-4"
+                        />
+
+                        <button
+                            class="w-full lg:w-90 h-11 border border-white font-bold text-[15px] sm:text-[16px] hover:bg-white hover:text-[#3D3D3D] transition"
+                        >
+
+                            اشتراک
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div>
+
+                    <h2 class="font-bold text-[16px] sm:text-[18px] mb-6">
+
+                        درباره لیلیان
+
+                    </h2>
+
+                    <ul class="space-y-5 text-[12px] sm:text-[14px] text-gray-300">
+
+                        <li><a href="#">اتاق خبر لیلیان</a></li>
+
+                        <li><a href="#">همکاری با ما</a></li>
+
+                        <li><a href="#">تماس با ما</a></li>
+
+                        <li><a href="#">درباره ما</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div>
+
+                    <h2 class="font-bold text-[16px] sm:text-[18px] mb-6">
+
+                        خدمات مشتریان
+
+                    </h2>
+
+                    <ul class="space-y-5 text-[12px] sm:text-[14px] text-gray-300">
+
+                        <li><a href="#">پاسخ به سوالات متداول</a></li>
+
+                        <li><a href="#">شرایط استفاده</a></li>
+
+                        <li><a href="#">حریم خصوصی</a></li>
+
+                        <li><a href="#">گزارش باگ</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div>
+
+                    <h2 class="font-bold text-[16px] sm:text-[18px] mb-6">
+
+                        راهنمای خرید از لیلیان
+
+                    </h2>
+
+                    <ul class="space-y-5 text-[12px] sm:text-[14px] text-gray-300">
+
+                        <li><a href="#">خرید قسطی</a></li>
+
+                        <li><a href="#">نحوه ثبت سفارش</a></li>
+
+                        <li><a href="#">رویه ارسال سفارش</a></li>
+
+                        <li><a href="#">شیوه‌های پرداخت</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="flex flex-col items-start">
+
+                    <img src="./src/image/Logo (1).png" alt="Lilian" class="max-w-28 sm:max-w-32.5" />
+
+                    <div class="flex gap-4 sm:gap-5 mt-6">
+
+                        <a href="#">
+
+                            <img src="./src/image/pinterest p.png" alt="Pinterest" />
+
+                        </a>
+
+                        <a href="#">
+
+                            <img src="./src/image/linkedin in.png" alt="LinkedIn" />
+
+                        </a>
+
+                        <a href="#">
+
+                            <img src="./src/image/twitter.png" alt="Twitter" />
+
+                        </a>
+
+                        <a href="#">
+
+                            <img src="./src/image/instagram.png" alt="Instagram" />
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+        <!-- Login Modal -->
+
+        <div
+            id="loginModal"
+            class="w-full hidden fixed inset-0 bg-black/50 items-center justify-center z-50 px-3 sm:px-4 py-4"
+        >
+
+            <div
+                class="bg-white w-full max-w-[587px] max-h-[90vh] overflow-y-auto h-auto min-h-[454px] p-5 sm:p-8 relative"
+            >
+
+                <button
+                    onclick="closeLogin()"
+                    class="absolute top-3 right-3 sm:top-4 sm:right-4 text-2xl"
+                >
+
+                    ×
+
+                </button>
+
+                <h2
+                    class="text-[20px] font-sans font-bold mb-6 flex justify-center items-center"
+                >
+
+                    خوش آمدید
+
+                </h2>
+
+                <input
+                    type="text"
+                    placeholder="شماره همراه"
+                    class="w-full border font-sans border-gray-300 p-3 mb-4"
+                />
+
+                <input
+                    type="password"
+                    placeholder="رمز عبور"
+                    class="w-full border font-sans border-gray-300 p-3 mb-4"
+                />
+
+                <ul
+                    class="space-y-5 font-sans text-[12px] sm:text-[14px] text-gray-300 mb-4"
+                >
+
+                    <li>
+
+                        <a href="#">
+
+                            کلمه عبور خود را فراموش کرده‌اید؟
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+                <button
+                    class="w-full bg-black text-white font-sans py-3"
+                >
+
+                    ورود
+
+                </button>
+
+                <!-- Other Login Methods -->
+
+                <div
+                    class="flex flex-col sm:flex-row justify-between mt-8 sm:mt-15 gap-3"
+                >
+
+                    <div
+                        class="w-full sm:w-[270px] h-[40px] flex justify-center items-center text-[10px] gap-x-1.5 text-[#7A7A7A] border font-sans border-gray-300"
+                    >
+
+                        <span>ورود با گوگل</span>
+
+                        <img
+                            class="w-[16px] h-[16px]"
+                            src="./src/image/Google.png"
+                            alt=""
+                        />
+
+                    </div>
+
+                    <div
+                        class="w-full sm:w-[270px] h-[40px] flex justify-center items-center text-[10px] gap-x-1.5 text-[#7A7A7A] border font-sans border-gray-300"
+                    >
+
+                        <span>ورود با ایمیل</span>
+
+                        <img
+                            class="w-[16px] h-[13px]"
+                            src="./src/image/envelope.png"
+                            alt=""
+                        />
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Login Modal -->
+
+    </div>
+
+    <script>
+
+        //product4///////////////////////////////////////////////
+
+        // Product hover1
+
+        const image1 = document.querySelector("#image-1");
+
+        image1.addEventListener("mouseenter", () => {
+
+            image1.src = "./src/image/picture (1).png";
+
+        });
+
+        image1.addEventListener("mouseleave", () => {
+
+            image1.src = "./src/image/picture.png";
+
+        });
+
+        // Product hover2
+
+        const image2 = document.querySelector("#image-2");
+
+        image2.addEventListener("mouseenter", () => {
+
+            image2.src = "./src/image/picture (2).png";
+
+        });
+
+        image2.addEventListener("mouseleave", () => {
+
+            image2.src = "./src/image/picture (1).png";
+
+        });
+
+        // Product hover3
+
+        const image3 = document.querySelector("#image-3");
+
+        image3.addEventListener("mouseenter", () => {
+
+            image3.src = "./src/image/picture (3).png";
+
+        });
+
+        image3.addEventListener("mouseleave", () => {
+
+            image3.src = "./src/image/picture (2).png";
+
+        });
+
+        // Product hover4
+
+        const image4 = document.querySelector("#image-4");
+
+        image4.addEventListener("mouseenter", () => {
+
+            image4.src = "./src/image/picture.png";
+
+        });
+
+        image4.addEventListener("mouseleave", () => {
+
+            image4.src = "./src/image/picture (3).png";
+
+        });
+
+        //product4///////////////////////////////////////////////
+
+        function openLogin(event) {
+
+            event.preventDefault();
+
+            const modal = document.getElementById("loginModal");
+
+            modal.classList.remove("hidden");
+
+            modal.classList.add("flex");
+
+        }
+
+        function closeLogin() {
+
+            const modal = document.getElementById("loginModal");
+
+            modal.classList.add("hidden");
+
+            modal.classList.remove("flex");
+
+        }
+
+    </script>
+
+</body>
+
+</html>

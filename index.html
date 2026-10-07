@@ -1,0 +1,731 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Lilian</title>
+
+    <link rel="stylesheet" href="./src/swiper/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="./src/css/output.css" />
+  </head>
+
+  <body>
+    <!-- PROJECT -->
+    <div class="w-full overflow-hidden">
+      <!-- HEADER-->
+      <header class="w-full bg-white">
+        <div
+          class="max-w-325 mx-auto min-h-16 px-4 lg:px-8 flex flex-wrap items-center justify-between gap-y-4 py-4 lg:py-0"
+        >
+          <!-- Logo -->
+          <div class="flex items-center">
+            <img
+              src="./src/image/Logo.png"
+              alt="Lilian"
+              class="w-auto max-w-32.5"
+            />
+          </div>
+
+          <nav
+            class="w-full order-3 lg:order-0 lg:w-auto flex justify-center lg:justify-start gap-5 sm:gap-7 lg:gap-6"
+          >
+            <a class="font-sans text-sm sm:text-base" href="#"> مردانه </a>
+
+            <a class="font-sans text-sm sm:text-base" href="./index2.html">
+              زنانه
+            </a>
+
+            <a class="font-sans text-sm sm:text-base" href="#"> درباره ما </a>
+
+            <a class="font-sans text-sm sm:text-base" href="#"> تماس با ما </a>
+          </nav>
+
+          <!-- Icons -->
+          <div class="flex items-center gap-4 lg:gap-5">
+            <a href="#">
+              <img src="./src/image/Search.png" alt="Search" class="w-5 h-5" />
+            </a>
+
+            <a href="#" onclick="openLogin(event)">
+              <img
+                src="./src/image/User Alt.png"
+                alt="User"
+                class="w-5 h-5"
+              />
+            </a>
+
+            <a href="./buy.html">
+              <img
+                src="./src/image/Shopping Cart.png"
+                alt="Shopping cart"
+                class="w-5 h-5"
+              />
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <!-- HEADER-->
+      <!--BLACK FRIDAY-->
+      <div
+        class="w-full min-h-150 lg:min-h-178.25 bg-black flex flex-col justify-center items-center px-5 py-20"
+      >
+        <div class="flex flex-col gap-4 text-center">
+          <h2
+            class="font-sans text-[16px] sm:text-[20px] md:text-[24px] lg:text-[28px] font-bold text-white"
+          >
+            %30 تا 50% تخفیف روی تمامی محصولات
+          </h2>
+
+          <h1
+            class="font-sans text-[38px] sm:text-[48px] md:text-[55px] lg:text-[60px] font-bold text-white uppercase"
+          >
+            black friday
+          </h1>
+
+          <h2
+            class="font-sans text-[22px] sm:text-[26px] md:text-[30px] lg:text-[35px] font-bold text-white"
+          >
+            جمعه سیاه
+          </h2>
+        </div>
+
+        <div
+          class="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-5 mt-14 lg:mt-16"
+        >
+          <a
+            class="inline-flex justify-center items-center font-bold w-52 h-14 sm:h-15 bg-white"
+            href="./index2.html"
+          >
+            زنانه
+          </a>
+
+          <a
+            class="inline-flex justify-center items-center font-bold w-52 h-14 sm:h-15 bg-white"
+            href="#"
+          >
+            مردانه
+          </a>
+        </div>
+      </div>
+      <!--BLACK FRIDAY-->
+
+      <!-- TOP IMAGES  -->
+      <div class="w-full px-4 sm:px-6 lg:px-10 xl:px-20 py-10 lg:py-20">
+        <div class="max-w-325 mx-auto flex flex-col lg:flex-row gap-5 lg:gap-8">
+          <img
+            class="w-full lg:w-1/2 h-auto object-cover"
+            src="./src/image/men-organize.png"
+            alt="Men collection"
+          />
+
+          <img
+            class="w-full lg:w-1/2 h-auto object-cover"
+            src="./src/image/women-organize.png"
+            alt="Women collection"
+          />
+        </div>
+      </div>
+      <!-- TOP IMAGES  -->
+
+      <!--PRODUCTS-->
+
+      <div class="w-full px-4 sm:px-6 lg:px-10 xl:px-20">
+        <div class="max-w-325 mx-auto">
+          <h1
+            class="font-sans text-[20px] sm:text-[22px] mb-8 lg:mb-10 font-bold"
+          >
+            مردانه و زنانه
+          </h1>
+
+          <!-- Products -->
+          <div
+            class="grid grid-cols-2 md:grid-cols-4 gap-x-3 sm:gap-x-5 gap-y-8 lg:gap-x-6"
+          >
+            <div class="group relative flex flex-col gap-y-3 sm:gap-y-4">
+              <img
+                class="w-full h-127 object-cover"
+                src="./src/image/picture.png"
+                alt="کت بلند پاییزی"
+                id="image-1"
+              />
+              <a
+                class="font-sans absolute bottom-28 left-1/2 -translate-x-1/2 w-[90%] h-14 bg-white flex justify-center items-center font-bold opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300"
+                href="#"
+              >
+                مشاهده محصول
+              </a>
+
+              <h2
+                class="font-sans text-[14px] sm:text-[17px] lg:text-[19px] font-bold"
+              >
+                کت بلند پاییزی
+              </h2>
+
+              <div
+                class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2"
+              >
+                <h3
+                  class="font-yekan text-rose-700 text-[13px] sm:text-[15px] lg:text-[17px] font-bold"
+                >
+                  4.500.000 تومان
+                </h3>
+
+                <p
+                  class="font-yekan text-gray-600 line-through text-[11px] sm:text-[13px] lg:text-[14px]"
+                >
+                  4,850,000 تومان
+                </p>
+              </div>
+            </div>
+
+            <div class="group relative flex flex-col gap-y-3 sm:gap-y-4">
+              <img
+                class="w-full h-127 object-cover"
+                src="./src/image/picture (1).png"
+                alt="پافر بلند زمستانی"
+                id="image-2"
+              />
+              <a
+                class="font-sans absolute bottom-28 left-1/2 -translate-x-1/2 w-[90%] h-14 bg-white flex justify-center items-center font-bold opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300"
+                href="#"
+              >
+                مشاهده محصول
+              </a>              
+
+              <h2
+                class="font-sans text-[14px] sm:text-[17px] lg:text-[19px] font-bold"
+              >
+                پافر بلند زمستانی
+              </h2>
+
+              <div
+                class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2"
+              >
+                <h3
+                  class="font-yekan text-rose-700 text-[13px] sm:text-[15px] lg:text-[17px] font-bold"
+                >
+                  6.700.000 تومان
+                </h3>
+
+                <p
+                  class="font-yekan text-gray-600 line-through text-[11px] sm:text-[13px] lg:text-[14px]"
+                >
+                  8.100.000 تومان
+                </p>
+              </div>
+            </div>
+
+            <div class="group relative flex flex-col gap-y-3 sm:gap-y-4">
+              <img
+                class="w-full h-127 object-cover"
+                src="./src/image/picture (2).png"
+                alt="پافر زمستانی"
+                id="image-3"
+              />
+              <a
+                class="font-sans absolute bottom-28 left-1/2 -translate-x-1/2 w-[90%] h-14 bg-white flex justify-center items-center font-bold opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300"
+                href="#"
+              >
+                مشاهده محصول
+              </a>              
+
+              <h2
+                class="font-sans text-[14px] sm:text-[17px] lg:text-[19px] font-bold"
+              >
+                پافر زمستانی
+              </h2>
+
+              <div
+                class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2"
+              >
+                <h3
+                  class="font-yekan text-rose-700 text-[13px] sm:text-[15px] lg:text-[17px] font-bold"
+                >
+                  5.450.000 تومان
+                </h3>
+
+                <p
+                  class="font-yekan text-gray-600 line-through text-[11px] sm:text-[13px] lg:text-[14px]"
+                >
+                  5.900.000 تومان
+                </p>
+              </div>
+            </div>
+
+            <div class="group relative flex flex-col gap-y-3 sm:gap-y-4">
+              <img
+                class="w-full h-127 object-cover"
+                src="./src/image/picture (3).png"
+                alt="کت بلند پشمی"
+                id="image-4"
+              />
+              <a
+                class="font-sans absolute bottom-28 left-1/2 -translate-x-1/2 w-[90%] h-14 bg-white flex justify-center items-center font-bold opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300"
+                href="./indexproduct.html"
+              >
+                مشاهده محصول
+              </a>              
+
+              <h2
+                class="font-sans text-[14px] sm:text-[17px] lg:text-[19px] font-bold"
+              >
+                کت بلند پشمی
+              </h2>
+
+              <div
+                class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2"
+              >
+                <h3
+                  class="font-yekan text-rose-700 text-[13px] sm:text-[15px] lg:text-[17px] font-bold"
+                >
+                  3.800.000 تومان
+                </h3>
+
+                <p
+                  class="font-yekan text-gray-600 line-through text-[11px] sm:text-[13px] lg:text-[14px]"
+                >
+                  4.200.000 تومان
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--PRODUCTS-->
+
+      <!--WOMEN SECTION -->
+
+      <div
+        class="max-w-325 mx-auto px-4 sm:px-6 lg:px-10 xl:px-0 py-12 lg:py-20"
+      >
+        <div class="flex flex-col lg:flex-row w-full">
+          <!-- Image -->
+          <div class="w-full lg:w-1/2">
+            <img
+              class="w-full h-full object-cover"
+              src="./src/image/picture (4).png"
+              alt="لباس های مجلسی زنانه"
+            />
+          </div>
+
+          <div
+            class="w-full lg:w-1/2 bg-[#F5F5F5] flex flex-col justify-center px-5 sm:px-8 md:px-10 lg:px-14 py-10 lg:py-12"
+          >
+            <h2
+              class="font-sans font-bold text-right text-[20px] sm:text-[22px] lg:text-[25px] mb-7"
+            >
+              لباس های مجلسی زنانه
+            </h2>
+
+            <div class="w-full">
+              <div class="swiper womenSwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img class="w-full" src="./src/image/card1.png" alt="" />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img class="w-full" src="./src/image/card2.png" alt="" />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img class="w-full" src="./src/image/card3.png" alt="" />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img class="w-full" src="./src/image/card1.png" alt="" />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img class="w-full" src="./src/image/card2.png" alt="" />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img class="w-full" src="./src/image/card3.png" alt="" />
+                  </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+
+            <a
+              class="font-sans text-[13px] sm:text-[14px] text-gray-500 underline mt-8 self-center"
+              href="#"
+            >
+              دیدن محصولات بیشتر
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!--MEN SECTION -->
+
+      <div
+        class="max-w-325 mx-auto px-4 sm:px-6 lg:px-10 xl:px-0 pb-12 lg:pb-20"
+      >
+        <div class="flex flex-col-reverse lg:flex-row w-full">
+          <div
+            class="w-full lg:w-1/2 bg-[#F5F5F5] flex flex-col justify-center px-5 sm:px-8 md:px-10 lg:px-14 py-10 lg:py-12"
+          >
+            <h2
+              class="font-sans font-bold text-right text-[20px] sm:text-[22px] lg:text-[25px] mb-7"
+            >
+              لباس های مجلسی مردانه
+            </h2>
+
+            <div class="w-full">
+              <div class="swiper menSwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      class="w-full"
+                      src="./src/image/card1 (1).png"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img
+                      class="w-full"
+                      src="./src/image/card2 (1).png"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img
+                      class="w-full"
+                      src="./src/image/card3 (1).png"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img
+                      class="w-full"
+                      src="./src/image/card1 (1).png"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img
+                      class="w-full"
+                      src="./src/image/card2 (1).png"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img
+                      class="w-full"
+                      src="./src/image/card3 (1).png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+
+            <a
+              class="font-sans text-[13px] sm:text-[14px] text-gray-500 underline mt-8 self-center"
+              href="#"
+            >
+              دیدن محصولات بیشتر
+            </a>
+          </div>
+
+          <div class="w-full lg:w-1/2">
+            <img
+              class="w-full h-full object-cover"
+              src="./src/image/picture (5).png"
+              alt="لباس های مجلسی مردانه"
+            />
+          </div>
+        </div>
+      </div>
+      <!--MEN SECTION -->
+
+      <!--FOOTER -->
+
+      <footer
+        class="w-full bg-[#3D3D3D] text-white px-5 sm:px-8 lg:px-12 xl:px-20 py-12"
+      >
+        <div
+          class="max-w-325 mx-auto flex flex-col sm:flex-row sm:flex-wrap lg:flex-nowrap justify-between items-start gap-10 lg:gap-8"
+        >
+          <div class="w-full sm:w-[45%] lg:w-90">
+            <h2 class="font-bold font-sans text-[17px] sm:text-[18px] mb-5">
+              اولین کسی باش که از تخفیف‌ها باخبر میشه
+            </h2>
+
+            <div class="flex flex-col">
+              <input
+                type="email"
+                placeholder="ایمیل"
+                class="w-full lg:w-90 h-11 bg-[#777] border border-white px-4 text-right placeholder:text-white placeholder:opacity-90 outline-none mb-4"
+              />
+
+              <input
+                type="text"
+                placeholder="نام شما"
+                class="w-full lg:w-90 h-11 bg-transparent border border-white px-4 text-right placeholder:text-white placeholder:opacity-90 outline-none mb-4"
+              />
+
+              <button
+                class="w-full lg:w-90 h-11 border border-white font-bold text-[15px] sm:text-[16px] hover:bg-white hover:text-[#3D3D3D] transition"
+              >
+                اشتراک
+              </button>
+            </div>
+          </div>
+
+          <div>
+            <h2 class="font-bold text-[17px] sm:text-[18px] mb-6">
+              درباره لیلیان
+            </h2>
+
+            <ul class="space-y-5 text-[13px] sm:text-[14px] text-gray-300">
+              <li><a href="#">اتاق خبر لیلیان</a></li>
+              <li><a href="#">همکاری با ما</a></li>
+              <li><a href="#">تماس با ما</a></li>
+              <li><a href="#">درباره ما</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 class="font-bold text-[17px] sm:text-[18px] mb-6">
+              خدمات مشتریان
+            </h2>
+
+            <ul class="space-y-5 text-[13px] sm:text-[14px] text-gray-300">
+              <li><a href="#">پاسخ به سوالات متداول</a></li>
+              <li><a href="#">شرایط استفاده</a></li>
+              <li><a href="#">حریم خصوصی</a></li>
+              <li><a href="#">گزارش باگ</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 class="font-bold text-[17px] sm:text-[18px] mb-6">
+              راهنمای خرید از لیلیان
+            </h2>
+
+            <ul class="space-y-5 text-[13px] sm:text-[14px] text-gray-300">
+              <li><a href="#">خرید قسطی</a></li>
+              <li><a href="#">نحوه ثبت سفارش</a></li>
+              <li><a href="#">رویه ارسال سفارش</a></li>
+              <li><a href="#">شیوه‌های پرداخت</a></li>
+            </ul>
+          </div>
+
+          <div class="flex flex-col items-start">
+            <img
+              src="./src/image/Logo (1).png"
+              alt="Lilian"
+              class="max-w-32.5"
+            />
+
+            <div class="flex gap-4 sm:gap-5 mt-6">
+              <a href="#">
+                <img src="./src/image/pinterest p.png" alt="Pinterest" />
+              </a>
+
+              <a href="#">
+                <img src="./src/image/linkedin in.png" alt="LinkedIn" />
+              </a>
+
+              <a href="#">
+                <img src="./src/image/twitter.png" alt="Twitter" />
+              </a>
+
+              <a href="#">
+                <img src="./src/image/instagram.png" alt="Instagram" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--FOOTER -->
+    </div>
+    <!-- Login Modal -->
+      <div
+        id="loginModal"
+        class="w-full hidden fixed inset-0 bg-black/50 items-center justify-center z-50"
+      >
+        <div class="bg-white w-[587px] h-[454px] p-8 relative">
+
+          <button
+            onclick="closeLogin()"
+            class="absolute top-4 right-4 text-2xl"
+          >
+            ×
+          </button>
+
+          <h2 class="text-[20px] font-sans font-bold mb-6 flex justify-center items-center ">
+           خوش آمدید
+          </h2>
+
+          <input
+            type="text"
+            placeholder="شماره همراه"
+            class="w-full border font-sans border-gray-300  p-3 mb-4"
+          >
+
+          <input
+            type="password"
+            placeholder="رمز عبور"
+            class="w-full border font-sans border-gray-300  p-3 mb-4"
+          >
+          <ul class="space-y-5 font-sans text-[13px] sm:text-[14px] text-gray-300 mb-4">
+            <li><a href="#">کلمه عبور خود را فراموش کرده‌اید؟
+
+            </a></li>
+          </ul>          
+
+          <button class="w-full bg-black text-white font-sans py-3">
+            ورود
+          </button>
+          <div class="flex justify-between mt-15 gap-x-3 ">
+            <div class="w-[270px] h-[40px] flex justify-center items-center text[10px] gap-x-1.5 text-[#7A7A7A] border font-sans border-gray-300   p-3 mb-4">ورود با گوگل
+              <img class="w-[16px] h-[16px]" src="./src/image/Google.png" alt="">
+            </div>  
+            <div class="w-[270px] h-[40px] flex justify-center items-center text[10px] gap-x-1.5 text-[#7A7A7A]  border font-sans border-gray-300  p-3 mb-4">ورود با ایمیل
+              <img class="w-[16px] h-[13px]" src="./src/image/envelope.png" alt="">
+            </div>          
+
+          </div>
+
+
+        </div>
+      </div>
+      <!-- Login Modal -->
+
+    <!--SCRIPTS -->
+
+    <script src="./src/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+      const swiperSettings = {
+        spaceBetween: 15,
+
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+
+        pagination: {
+          clickable: true,
+        },
+
+        breakpoints: {
+          0: {
+            slidesPerView: 1.5,
+            spaceBetween: 10,
+          },
+
+          480: {
+            slidesPerView: 2,
+            spaceBetween: 12,
+          },
+
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+          },
+
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+        },
+      };
+
+      const womenSwiper = new Swiper(".womenSwiper", {
+        ...swiperSettings,
+
+        pagination: {
+          el: ".womenSwiper .swiper-pagination",
+          clickable: true,
+        },
+      });
+
+      const menSwiper = new Swiper(".menSwiper", {
+        ...swiperSettings,
+
+        pagination: {
+          el: ".menSwiper .swiper-pagination",
+          clickable: true,
+        },
+      });
+
+      //product4///////////////////////////////////////////////
+      // Product hover1
+      const image1 = document.querySelector("#image-1");
+
+      image1.addEventListener("mouseenter", () => {
+        image1.src = "./src/image/picture (1).png";
+      });
+
+      image1.addEventListener("mouseleave", () => {
+        image1.src = "./src/image/picture.png";
+      });
+      // Product hover2
+
+      const image2 = document.querySelector("#image-2");
+
+      image2.addEventListener("mouseenter", () => {
+        image2.src = "./src/image/picture (2).png";
+      });
+
+      image2.addEventListener("mouseleave", () => {
+        image2.src = "./src/image/picture (1).png";
+      });
+      // Product hover3
+      
+      const image3 = document.querySelector("#image-3");
+
+      image3.addEventListener("mouseenter", () => {
+        image3.src = "./src/image/picture (3).png";
+      });
+
+      image3.addEventListener("mouseleave", () => {
+        image3.src = "./src/image/picture (2).png";
+      });
+      // Product hover4
+      
+      const image4 = document.querySelector("#image-4");
+
+      image4.addEventListener("mouseenter", () => {
+        image4.src = "./src/image/picture.png";
+      });
+
+      image4.addEventListener("mouseleave", () => {
+        image4.src = "./src/image/picture (3).png";
+      });      
+      //product4///////////////////////////////////////////////
+      function openLogin(event) {
+        event.preventDefault();
+
+        const modal = document.getElementById("loginModal");
+
+        modal.classList.remove("hidden");
+        modal.classList.add("flex");
+      }
+
+      function closeLogin() {
+        const modal = document.getElementById("loginModal");
+
+        modal.classList.add("hidden");
+        modal.classList.remove("flex");
+      }      
+
+    </script>
+  </body>
+</html>
